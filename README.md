@@ -36,15 +36,6 @@ In addition to the original repository, install the following module as well:
 pip3 install submodules/diff-gaussian-rasterization submodules/simple-knn plyfile pyproj
 ```
 
-### For omnigs rendering
-
-You can use omnigs implementation. Checkout diff-gaussian-rasterization to omnigs branch.
-
-```bash
-cd submodules/diff-gaussian-rasterization
-git checkout omnigs
-```
-
 ### For Depth and Normal Rendering
 
 If you use depth and normal for training, use depth_normal_render
@@ -59,6 +50,16 @@ and
 cd 360-gaussian-splatting
 git clone https://github.com/inuex35/360-dn-diff-gaussian-rasterization submodules/360-dn-diff-gaussian-rasterization
 pip3 install submodules/360-dn-diff-gaussian-rasterization submodules/simple-knn plyfile pyproj openexr imageio
+```
+
+### For omnigs rendering
+
+You can use omnigs implementation. Checkout 360-dn-diff-gaussian-rasterization to omnigs branch.
+Omnigs branch only works with depth_normal_render branch and 360-dn-diff-gaussian-rasterization.
+
+```bash
+cd submodules/360-dn-diff-gaussian-rasterization
+git checkout omnigs
 ```
 
 ## Training 360 Gaussian Splatting
